@@ -5,7 +5,7 @@ use warnings;
 
 sub stringify {
     my $self = shift;
-    my $year = $self->year? sprintf(' (%s)', $self->year): '';
+    my $year = $self->year? sprintf(' (%s)', $self->year->year): '';
     sprintf '%s: %s%s', $self->artist, $self->title, $year;
 }
 
