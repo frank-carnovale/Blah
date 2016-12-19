@@ -9,7 +9,7 @@ sub startup {
   $self->plugin('PODRenderer');
 
   # Tables framework..
-  $self->plugin( Tables => {connect_info=>['dbi:SQLite:t/example.db', '', '']} );
+  $self->plugin( Tables => {model_class=>'BlahDB'} );
 
   # Router
   my $r = $self->routes;
