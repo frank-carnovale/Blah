@@ -22,7 +22,7 @@ $t->text_is('button[table=artist]', 'Musician'
                                     => 'list of tables includes button for Musician');
 
 $t->get_ok('/tables/artist/1/view'  => 'Row view page appears');
-$t->text_is('a[href=/tables/cd/2/view]', '[Cd] 2',
+$t->text_is('a[href=/tables/cd/2/view]', 'Michael Jackson: Bad (1987)',
                                     => 'Linkable Child row appears');
 
 done_testing();

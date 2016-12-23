@@ -19,7 +19,7 @@ $t->get_ok('/tables/artist/1/cds.json' => 'Artist child ("CDs") json query succe
 
 #note "GOT",  explain $t->tx->res->json;
 
-$t->json_has('/1/label'                => 'json response has "label" field');
-$t->json_is ('/1/label', '[Cd] 2'      => 'label is "[Cd 2]"');
+$t->json_has('/1/label'                                => 'json response has "label" field');
+$t->json_is ('/1/label', 'Michael Jackson: Bad (1987)' => 'label shows correct stringification');
 
 done_testing();
