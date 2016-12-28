@@ -9,7 +9,9 @@ WriteMakefile(
   ABSTRACT     => 'A minimal Mojolicious::Plugin::Tables application',
   AUTHOR       => 'Frank Carnovale <frankc@cpan.org>',
   LICENSE      => 'artistic_2',
-  PREREQ_PM    => {'Mojolicious::Plugin::Tables' => '0.05', },
+  PREREQ_PM    => {'Mojolicious::Plugin::Tables' => '0.05',
+                   'DateTime-Format-SQLite'      => '0.11',
+                  },
   test         => {TESTS => 't/*.t'},
   META_MERGE   => {
     dynamic_config => 0,
