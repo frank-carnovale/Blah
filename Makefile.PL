@@ -10,7 +10,7 @@ WriteMakefile(
   AUTHOR       => 'Frank Carnovale <frankc@cpan.org>',
   LICENSE      => 'artistic_2',
   PREREQ_PM    => {'Mojolicious::Plugin::Tables' => '0.05',
-                   'DateTime-Format-SQLite'      => '0.11',
+                   'DateTime::Format::SQLite'    => '0.11',
                   },
   test         => {TESTS => 't/*.t'},
   META_MERGE   => {
