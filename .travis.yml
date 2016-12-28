@@ -1,2 +1,3 @@
 language: perl
-script:   perl Makefile.PL && make test TEST_VERBOSE=1
+# uncomment this for more verbose test output..
+#script:   perl Makefile.PL && make test TEST_VERBOSE=1
