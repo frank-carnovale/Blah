@@ -1,0 +1,16 @@
+
+<style>
+    .bordered { border: 2px #fd3 outset; padding: 10px; margin: 20px }
+</style>
+
+<div class="bordered">
+
+<em>This track is called</em>
+<h1 id="custom-track-data"><%=$row->title%></h1>
+
+<p>
+(This is a callout template showing extra info for "Tracks" records.)
+</p>
+
+</div>
+
